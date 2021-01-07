@@ -1,0 +1,34 @@
+h1{
+  color:#d11241;
+  font-family: Gotham;
+  text-align: center;
+}
+
+#mainimage img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(Gotham-Bold.ttf);
+}
+h2{
+  color:#d11241;
+  font-family: Gotham;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  width: 300px;
+}

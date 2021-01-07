@@ -1,0 +1,164 @@
+// BASIC
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.logo-image{
+  height: 90px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+}
+
+.logo-image img{
+  height: 80px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: red;
+  border-radius: 5px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 30px;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+  /* Fan Shop */
+  ul.products {
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vmin;
+  }
+  
+  ul.products li {
+    height: 40vh;
+    flex-grow: 1;
+    margin: 2vmin;
+  }
+  
+  ul.products li:last-child {
+    // There's no science in using "10" here. In all my testing, this deul.products livered the best resul.productsts.
+    flex-grow: 10;
+  }
+  
+  li img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 4px;
+  }
+  
+  // ADVANCED
+  
+  // Portrait
+  
+  @media (max-aspect-ratio: 1/1) {
+    ul.products li {
+      height: 30vh;
+    }
+  }
+  
+  // Short screens
+  
+  @media (max-height: 480px) {
+    ul.products li {
+      height: 80vh;
+    }
+  }
+  
+  // Smaller screens in portrait
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul.products {
+      flex-direction: row;
+    }
+  
+    ul.products li {
+      height: auto;
+      width: 100%;
+    }
+    li img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }

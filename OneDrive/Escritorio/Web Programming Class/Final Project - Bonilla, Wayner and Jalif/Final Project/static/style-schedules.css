@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Gotham;
+  src: url(Gotham-Bold.ttf)
+}
+
+h1 {
+    color:#d11241;
+    text-align: center;
+    font-family: Gotham;
+    font-size: 40px;
+}
+div.schedules img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: black 10px 0px 30px;
+}
+div.schedules a {
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 45px;
+  font-family: Gotham;
+  letter-spacing: 4px
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  color:#d11241;
+  border-collapse: collapse;
+  width: 95%;
+  font-family: Gotham;
+  text-align: left;
+}
+table, th, td {
+  border: 2px solid black;
+  padding: 4px
+}

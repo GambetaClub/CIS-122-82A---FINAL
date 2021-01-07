@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+}
+form{
+  display: inline-block;
+}
+h1{
+  color:#d11241;
+  font-family: Gotham;
+}
+
+a#emailus {
+  color: #d11241;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(Gotham-Bold.ttf)
+}

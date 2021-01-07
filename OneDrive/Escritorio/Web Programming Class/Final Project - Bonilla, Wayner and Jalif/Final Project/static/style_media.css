@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Gotham;
+  src: url(Gotham-Bold.ttf)
+}
+
+h1 {
+  color:#d11241;
+  text-align:center;
+  font-family: Gotham;
+  font-size: 40px;
+}
+
+img.media {
+  width: 27%;
+  display: inline;
+  margin-left: 65px;
+  margin-right: auto;
+  margin-bottom: 65px;
+  box-shadow: black 10px 0px 30px
+}
+
